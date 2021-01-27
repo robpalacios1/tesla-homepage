@@ -1,6 +1,12 @@
 import React from 'react'
-import './Header.css'
+
+
+/***** Assets *****/
 import TeslaLogo from '../assets/teslaLogoSmall.svg'
+
+
+/***** CSS *****/
+import './Header.css'
 
 const Header = () => {
     return (

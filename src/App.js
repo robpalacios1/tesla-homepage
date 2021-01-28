@@ -8,7 +8,7 @@ import Item from './components/Item'
 
 /***** Assets *****/
 import Accesories from './assets/Desktop-Accessories.jpg';
-import ModelS from './assets/Desktop-Model3.jpeg';
+import ModelS from './assets/Desktop-ModelS.jpeg';
 import Model3 from './assets/Desktop-Model3.jpeg';
 import ModelX from './assets/Desktop-ModelX.jpeg';
 import ModelY from './assets/Desktop-ModelY.jpeg';

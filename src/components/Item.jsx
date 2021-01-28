@@ -3,6 +3,9 @@ import React from 'react'
 /***** Components *****/
 import Button from './Button'
 
+/***** Icon *****/
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
+
 const Item = ({
     title,
     desc,
@@ -16,7 +19,7 @@ const Item = ({
     first}) => {
     return (
         <div className="item" style={{
-
+            backgroundImage: `url(${backgroundImg})`
         }}>
             <div className="item__container">
                 <div className="item__text">
@@ -38,7 +41,7 @@ const Item = ({
                     </div>
                     {first &&(
                         <div className="item__expand">
-                            
+                            <ExpandMoreIcon />
                         </div>
                     )}
                 </div>

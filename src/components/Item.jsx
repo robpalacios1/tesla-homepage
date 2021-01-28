@@ -1,5 +1,8 @@
 import React from 'react'
 
+/***** Components *****/
+import Button from './Button'
+
 const Item = ({
     title,
     desc,
@@ -24,8 +27,20 @@ const Item = ({
                 </div>
                 <div className="item__lowerThird">
                     <div className="item__buttons">
-
+                        <Button
+                            imp="primary"
+                            text={leftBtnLink}
+                            link={leftBtnLink}
+                        />
+                        {twoButtons && (
+                            <Button imp='secpndary' text={rightBtnTxt} link={rigthBtnLink} />
+                        )}
                     </div>
+                    {first &&(
+                        <div className="item__expand">
+                            
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

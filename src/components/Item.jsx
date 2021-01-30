@@ -12,12 +12,11 @@ import './Item.css'
 const Item = ({
     title,
     desc,
-    descLink,
     backgroundImg,
     leftBtnTxt,
     leftBtnLink,
     rightBtnTxt,
-    rigthBtnLink,
+    rightBtnLink,
     twoButtons,
     first}) => {
     return (
@@ -35,11 +34,15 @@ const Item = ({
                     <div className="item__buttons">
                         <Button
                             imp="primary"
-                            text={leftBtnLink}
+                            text={leftBtnTxt}
                             link={leftBtnLink}
                         />
                         {twoButtons && (
-                            <Button imp='secondary' text={rightBtnTxt} link={rigthBtnLink} />
+                            <Button
+                                imp='secondary'
+                                text={rightBtnTxt}
+                                link={rightBtnLink}
+                            />
                         )}
                     </div>
                     {first &&(

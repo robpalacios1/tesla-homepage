@@ -3,8 +3,6 @@ import React from 'react'
 /***** Components *****/
 import Button from './Button'
 
-/***** Icon *****/
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
 /*****  CSS *****/
 import './Item.css'
@@ -45,11 +43,6 @@ const Item = ({
                             />
                         )}
                     </div>
-                    {first &&(
-                        <div className="item__expand">
-                            <ExpandMoreIcon />
-                        </div>
-                    )}
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@ FROM node:12
 
 COPY [".", "/usr/src/"]
 
-WORKDIR /usr/src
+WORKDIR /home/roberto/tesla-homepage/
 
 RUN npm install
 

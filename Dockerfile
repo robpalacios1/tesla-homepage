@@ -1,5 +1,13 @@
-FROM ubuntu:20.04
-RUN apt-get update
-RUN apt-get install -y --no install-recommends mysql-client
-RUN rm -rf /var/lib/apt/lists/*
-ENTRYPOINT [ "mysql" ]
+FROM node:12
+
+COPY [".", "/usr/src/"]
+
+WORKDIR /usr/src
+
+RUN npm install
+
+EXPOSE 3000
+
+ENTRYPOINT [ "node" ]
+
+CMD [ "index.js" ]

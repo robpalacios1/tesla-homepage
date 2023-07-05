@@ -1,13 +1,15 @@
 FROM node:12
 
-COPY [".", "/usr/src/"]
+WORKDIR /app
 
-WORKDIR /usr/src/
+ADD package.json yarn.lock /app/
 
 RUN npm install
 
 EXPOSE 3000
 
+ADD . /app
+
 ENTRYPOINT [ "node" ]
 
-CMD [ "index.js" ]
+CMD [ "index" ]

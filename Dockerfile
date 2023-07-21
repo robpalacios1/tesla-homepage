@@ -1,15 +1,15 @@
-FROM node:12
+FROM node:alpine
 
-WORKDIR /app
+WORKDIR /app 
 
-ADD package.json yarn.lock /app/
+COPY package*.json .
 
 RUN npm install
 
+COPY . .
+
+# RUN npm run build
+
 EXPOSE 3000
 
-ADD . /app
-
-ENTRYPOINT [ "node" ]
-
-CMD [ "index" ]
+CMD [ "npm", "start" ]
